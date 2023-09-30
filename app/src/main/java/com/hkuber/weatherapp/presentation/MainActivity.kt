@@ -1,9 +1,9 @@
-package com.plcoding.weatherapp.presentation
+package com.hkuber.weatherapp.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.plcoding.weatherapp.presentation.ui.theme.WeatherAppTheme
+import com.hkuber.weatherapp.presentation.ui.theme.WeatherAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
