@@ -1,4 +1,4 @@
-package com.plcoding.weatherapp
+package com.hkuber.weatherapp
 
 import org.junit.Test
 
