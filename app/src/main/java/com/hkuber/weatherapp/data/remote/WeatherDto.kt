@@ -5,5 +5,5 @@ import com.squareup.moshi.Json
 data class WeatherDto(
 
     @field:Json(name = "hourly")
-    val weatherDto: WeatherDto
+    val weatherDto: WeatherViewData
 )
