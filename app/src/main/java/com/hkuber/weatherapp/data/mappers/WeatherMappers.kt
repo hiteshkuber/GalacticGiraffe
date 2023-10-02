@@ -14,10 +14,10 @@ private data class IndexedWeatherData(
     val weatherData: WeatherData
 )
 fun WeatherViewData.toWeatherDataMap(): Map<Int, List<WeatherData>> {
-    return timeList.mapIndexed{ index, time ->
+    return time.mapIndexed{ index, time ->
         val temperature = temperatureList[index]
-        val windSpeed = windSpeedList[index]
         val humidity = humidityList[index]
+        val windSpeed = windSpeedList[index]
         val code = codeList[index]
         val pressure = pressureList[index]
 
@@ -56,5 +56,4 @@ fun WeatherDto.toWeatherInfo() : WeatherInfo {
         weatherDataPerDay = weatherDataMap,
         currentWeatherDetail = currentWeatherDetail
     )
-
 }

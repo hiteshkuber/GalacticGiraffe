@@ -2,5 +2,5 @@ package com.hkuber.weatherapp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val DarkBlue = Color(0xFF1B3B5A)
-val DeepBlue = Color(0xFF102840)
+val LightGreen = Color(0xFF133A1B)
+val DarkGreen = Color(0xFF011B10)

@@ -15,7 +15,7 @@ class WeatherRepositoryImpl @Inject constructor(
         longitude: Double
     ): Resource<WeatherInfo> {
         return  try {
-            Resource.Success(data = api.getWeatherData(lat = latitude, lon = longitude).toWeatherInfo())
+            Resource.Success(data = api.getWeatherData(lat = latitude, long = longitude).toWeatherInfo())
         } catch (e: Exception) {
             Resource.Error(message = e.message ?: "An unknown error occurred")
         }
