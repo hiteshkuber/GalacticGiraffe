@@ -8,6 +8,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -46,9 +47,6 @@ class MainActivity : ComponentActivity() {
                         .background(LightGreen)
                 ) {
                     WeatherCard(state = viewModel.state, backgroundColor = DarkGreen)
-                    
-                    Spacer(modifier = Modifier.height(16.dp))
-                    
                     WeatherForeCast(state = viewModel.state)
                 }
             }

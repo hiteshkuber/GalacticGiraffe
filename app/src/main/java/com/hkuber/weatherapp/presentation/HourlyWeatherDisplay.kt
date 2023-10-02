@@ -1,8 +1,10 @@
 package com.hkuber.weatherapp.presentation
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -14,6 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.hkuber.weatherapp.domain.weather.WeatherData
+import com.hkuber.weatherapp.presentation.ui.theme.LightGreen
 import java.time.format.DateTimeFormatter
 
 @Composable
@@ -38,10 +41,10 @@ fun HourlyWeatherDisplay(
         Image(
             painter = painterResource(id = weatherData.weatherType.iconRes),
             contentDescription = "",
-            modifier = Modifier.width(40.dp)
+            modifier = Modifier.width(50.dp)
         )
 
-        Text(text = "${weatherData.temperatureCelsius}°C", color = Color.LightGray, fontWeight = FontWeight.Bold)
+        Text(text = "${weatherData.temperatureCelsius}°C", color = Color.LightGray, fontWeight = FontWeight.Bold, modifier = Modifier.padding(5.dp))
 
     }
 }
